@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 27 Nov 2023 pada 01.21
--- Versi server: 10.4.32-MariaDB
--- Versi PHP: 8.2.12
+-- Generation Time: Mar 09, 2025 at 11:13 AM
+-- Server version: 10.4.32-MariaDB
+-- PHP Version: 8.2.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -24,7 +24,7 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `pasien_baru`
+-- Table structure for table `pasien_baru`
 --
 
 CREATE TABLE `pasien_baru` (
@@ -41,7 +41,7 @@ CREATE TABLE `pasien_baru` (
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `pasien_lama`
+-- Table structure for table `pasien_lama`
 --
 
 CREATE TABLE `pasien_lama` (
@@ -56,39 +56,41 @@ CREATE TABLE `pasien_lama` (
 --
 
 --
--- Indeks untuk tabel `pasien_baru`
+-- Indexes for table `pasien_baru`
 --
 ALTER TABLE `pasien_baru`
-  ADD PRIMARY KEY (`no_nik`) USING BTREE,
-  ADD KEY `id` (`id`) USING BTREE;
-
---
--- Indeks untuk tabel `pasien_lama`
---
-ALTER TABLE `pasien_lama`
+  ADD PRIMARY KEY (`id`,`no_nik`) USING BTREE,
   ADD KEY `id` (`id`) USING BTREE,
   ADD KEY `no_nik` (`no_nik`);
 
 --
--- AUTO_INCREMENT untuk tabel yang dibuang
+-- Indexes for table `pasien_lama`
+--
+ALTER TABLE `pasien_lama`
+  ADD PRIMARY KEY (`id`,`no_nik`) USING BTREE,
+  ADD KEY `id` (`id`) USING BTREE,
+  ADD KEY `no_nik` (`no_nik`);
+
+--
+-- AUTO_INCREMENT for dumped tables
 --
 
 --
--- AUTO_INCREMENT untuk tabel `pasien_baru`
+-- AUTO_INCREMENT for table `pasien_baru`
 --
 ALTER TABLE `pasien_baru`
   MODIFY `id` int(16) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
--- Ketidakleluasaan untuk tabel pelimpahan (Dumped Tables)
+-- Constraints for dumped tables
 --
 
 --
--- Ketidakleluasaan untuk tabel `pasien_lama`
+-- Constraints for table `pasien_lama`
 --
 ALTER TABLE `pasien_lama`
-  ADD CONSTRAINT `pasien_lama_ibfk_1` FOREIGN KEY (`no_nik`) REFERENCES `pasien_baru` (`no_nik`) ON DELETE CASCADE ON UPDATE CASCADE,
-  ADD CONSTRAINT `pasien_lama_ibfk_2` FOREIGN KEY (`id`) REFERENCES `pasien_baru` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
+  ADD CONSTRAINT `pasien_lama_ibfk_1` FOREIGN KEY (`no_nik`) REFERENCES `pasien_baru` (`no_nik`) ON DELETE RESTRICT ON UPDATE CASCADE,
+  ADD CONSTRAINT `pasien_lama_ibfk_2` FOREIGN KEY (`id`) REFERENCES `pasien_baru` (`id`) ON DELETE RESTRICT ON UPDATE CASCADE;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
