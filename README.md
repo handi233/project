@@ -1,6 +1,6 @@
 #Sistem pendaftaran Pasien berbasis web
 
-Aplikasi web untuk memidahkan pendaftaran pasien baru dan lama
+Aplikasi web untuk memudahkan pendaftaran pasien baru dan lama
 secara online di klinik. Sistem ini membantu pasien mendaftar tanpa harus langsung ke klinik, sekaligus memudahkan staf klinik dalam mengelola data pendaftaran.
 
 ##Fitur Utama
