@@ -20,4 +20,5 @@ secara online di klinik. Sistem ini membantu pasien mendaftar tanpa harus langsu
 2.Setup database MySQL dan import file database 
 3.Konfigurasi file koneksi database sesuai config local
 
-4. Jalankan aplikkasii dengan server local seperti XAMPP atau LAMP
+4. Jalankan aplikkasii dengan server local seperti XAMPP 
+
