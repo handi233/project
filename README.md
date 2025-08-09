@@ -16,4 +16,4 @@ Aplikasi web untuk informasi secara online di klinik. Sistem ini memberikan info
 3.Taruh di file xampp htdocs
 4.Jalankan aplikasi dengan php artisan serve di cmd (sesuaikan directory file )memakai framework Laravel dan memakai windows 10
 5.Laravel Versi  8
-
+6. Jalankan 127.0.0.1:8000 di url addres bar
