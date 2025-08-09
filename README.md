@@ -14,6 +14,6 @@ Aplikasi web untuk informasi secara online di klinik. Sistem ini memberikan info
 1.Clone repository ini git clone https://github.com/handi233/project
 2.Ekstrak file
 3.Taruh di file xampp htdocs
-4.Jalankan aplikasi dengan php artisan serve di cmd memakai framework Laravel dan memakai windows 10
+4.Jalankan aplikasi dengan php artisan serve di cmd (sesuaikan directory file )memakai framework Laravel dan memakai windows 10
 5.Laravel Versi  8
 
