@@ -1,4 +1,4 @@
-#Sistem pendaftaran Pasien berbasis web
+#Sistem portal informasi klinik
 
 Aplikasi web untuk informasi secara online di klinik. Sistem ini memberikan informasi kepada masyarakat tentang profil klinik.
 
