@@ -7,7 +7,7 @@ Aplikasi web untuk informasi secara online di klinik. Sistem ini memberikan info
 
 #Teknologi yang digunakan
 -Bahasa pemograman : PHP
--Framwork :Laravel
+-Framwork :Laravel 8
 -Frontend:HTML, CSS, JavaScript
 
 ##Cara Menjalankan 
