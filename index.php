@@ -126,6 +126,7 @@
                                             </ul>
                                         </li> -->
                                         <li><a href="#">Kontak</a>
+                                       
                                            <!-- te -->
                                               <!--   <li><a href="blog-grid.html">Blog Grid</a></li>
                                                 <li><a href="blog-list.html">Blog List</a></li>
