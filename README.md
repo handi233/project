@@ -3,7 +3,7 @@
 Aplikasi web untuk informasi secara online di klinik. Sistem ini memberikan informasi kepada masyarakat tentang profil klinik.
 
 ##Fitur Utama
--Portal informasi company profil klinik
+-Portal Pendaftaran Pasien
 
 #Teknologi yang digunakan
 -Bahasa pemograman : PHP
